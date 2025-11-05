@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Header Navigation</title>
+  <link rel="stylesheet" href="./css/language_droplist.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-left">
+      <!-- Logo (thay ảnh logo của bạn vào đây) -->
+      <img src="./img/header_logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="header-right">
+      <!-- Nút chọn ngôn ngữ -->
+      <div class="lang-selector" id="langSelector">
+        <button id="currentLang" class="current-lang" aria-label="Language selection">
+          <img src="./img/language_change.png" alt="global icon" class="flag-icon" />
+        </button>
+
+        <div id="langMenu" class="lang-menu hidden">
+          <button class="lang-option" data-lang="JP" data-flag="./img/flag/japan.png">
+            <img src="./img/flag/japan.png" alt="日本" class="flag" />
+            <span>日本語</span>
+          </button>
+          <button class="lang-option" data-lang="KR" data-flag="./img/flag/korea.png">
+            <img src="./img/flag/korea.png" alt="한국어" class="flag" />
+            <span>한국어</span>
+          </button>
+          <button class="lang-option" data-lang="EN" data-flag="./img/flag/theUK.png">
+            <img src="./img/flag/theUK.png" alt="English" class="flag" />
+            <span>English</span>
+          </button>
+          <button class="lang-option" data-lang="TH" data-flag="./img/flag/thailand.png">
+            <img src="./img/flag/thailand.png" alt="ภาษาไทย" class="flag" />
+            <span>ภาษาไทย</span>
+          </button>
+          <button class="lang-option" data-lang="TW" data-flag="./img/flag/taiwan.png">
+            <img src="./img/flag/taiwan.png" alt="台灣" class="flag" />
+            <span>繁體中文</span>
+          </button>
+          <button class="lang-option" data-lang="CN" data-flag="./img/flag/china.png">
+            <img src="./img/flag/china.png" alt="中文" class="flag" />
+            <span>中文</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#slideMenuSection">写真</a></li>
+      <li><a href="#menuSection">メニュー</a></li>
+      <li><a href="#drinkSection">ドリンク</a></li>
+      <li><a href="#attentionSection">注意事項</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section id="slideMenuSection">
+      <!-- Nội dung slide_menu.html -->
+    </section>
+  
+    <section id="menuSection">
+      <!-- Nội dung menu.html -->
+    </section>
+  
+    <section id="drinkSection">
+      <!-- Nội dung drink_menu.html -->
+    </section>
+  
+    <section id="attentionSection">
+      <!-- Nội dung attention.html -->
+    </section>
+  </main>
+
+  <script src="./js/language_droplist.js"></script>
+</body>
+</html>

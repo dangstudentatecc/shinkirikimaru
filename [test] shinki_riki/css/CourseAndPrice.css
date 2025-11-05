@@ -1,0 +1,72 @@
+body {
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    background-color: #fff9f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #8b4513;
+  }
+  
+  .courses {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .course {
+    background-color: #f5f0e6;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .course:hover {
+    background-color: #ffe5b4;
+  }
+  .course.active {
+    background-color: #ffcc80;
+    border: 2px solid #e67e22;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+  
+  th, td {
+    border: 1px solid #d3b48d;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #fff2d6;
+    cursor: pointer;
+  }
+  
+  td.active {
+    background-color: #ffecb3;
+    font-weight: bold;
+  }
+  
+  .drink-section {
+    background-color: #fff7ea;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .note {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+  }
+  

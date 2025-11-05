@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドリンクメニュー</title>
+    <link rel="stylesheet" href="./css/drink_menu.css">
+</head>
+
+<body>
+    <div class="main-button-group">
+        <button id="tanpinBtn" class="main-btn">単品</button>
+        <button id="nomihodaiBtn" class="main-btn">飲み放題</button>
+    </div>
+
+    <!-- --- 単品エリア --- -->
+    <div id="tanpinArea" class="tanpin-area hidden">
+        <div class="tanpin-images">
+            <img src="./img/pamphlet/drinkmenu1.png" alt="ドリンクメニュー1">
+            <img src="./img/pamphlet/drinkmenu2.png" alt="ドリンクメニュー2">
+        </div>
+    </div>
+
+    <!-- --- 飲み放題エリア --- -->
+    <div id="nomihodaiArea" class="nomihodai-area hidden">
+        <div class="button-group">
+            <span class="note">※ワンドリンク制になります。</span>
+            <div class="button-line">
+                <div class="btn-wrapper">
+                    <button id="softDrink" class="menu-btn">ソフトドリンク飲み放題</button>
+                </div>
+                <div class="btn-wrapper">
+                    <button id="alcoholBeer" class="menu-btn">アルコール飲み放題</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <!-- Soft Drinks -->
+            <div class="card" data-flag="soft">
+                <div class="image"><img src="./img/ice_drink.jpg" alt="アイスドリンク"></div>
+                <div class="divider"></div>
+                <div class="name">アイスドリンク</div>
+            </div>
+
+            <div class="card" data-flag="soft">
+                <div class="image"><img src="./img/hot_drink.jpg" alt="ホットドリンク"></div>
+                <div class="divider"></div>
+                <div class="name">ホットドリンク</div>
+            </div>
+
+            <!-- Alcohol -->
+            <div class="card" data-flag="alcohol">
+                <div class="image"><img src="./img/beer.jpg" alt="ビール"></div>
+                <div class="divider"></div>
+                <div class="name">ビール</div>
+            </div>
+
+            <div class="card" data-flag="alcohol">
+                <div class="image"><img src="./img/highball.jpg" alt="ハイボール"></div>
+                <div class="divider"></div>
+                <div class="name">ハイボール</div>
+            </div>
+
+            <div class="card" data-flag="alcohol">
+                <div class="image"><img src="./img/cocktail.jpg" alt="カクテル"></div>
+                <div class="divider"></div>
+                <div class="name">カクテル</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/drink_menu.js"></script>
+</body>
+</html>

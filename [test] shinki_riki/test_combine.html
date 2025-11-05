@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>メニュー見込み</title>
+  <link rel="stylesheet" href="./css/language_droplist.css" />
+  <link rel="stylesheet" href="./css/menu.css" />
+  <link rel="stylesheet" href="./css/drink_menu.css" />
+  <link rel="stylesheet" href="./css/attention.css" />
+  <link rel="stylesheet" href="./css/popup_Image.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <img src="./img/header_logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="header-right">
+      <div class="lang-selector" id="headerLangSelector">
+        <button id="headerCurrentLang" class="current-lang" aria-label="Language selection">
+          <img src="./img/language_change.png" alt="global icon" class="flag-icon" />
+        </button>
+
+        <div id="headerLangMenu" class="lang-menu lang-hidden">
+          <button class="lang-option" data-lang="JP" data-flag="./img/flag/japan.png">
+            <img src="./img/flag/japan.png" alt="日本" class="flag" />
+            <span>日本語</span>
+          </button>
+          <button class="lang-option" data-lang="KR" data-flag="./img/flag/korea.png">
+            <img src="./img/flag/korea.png" alt="한국어" class="flag" />
+            <span>한국어</span>
+          </button>
+          <button class="lang-option" data-lang="EN" data-flag="./img/flag/theUK.png">
+            <img src="./img/flag/theUK.png" alt="English" class="flag" />
+            <span>English</span>
+          </button>
+          <button class="lang-option" data-lang="TH" data-flag="./img/flag/thailand.png">
+            <img src="./img/flag/thailand.png" alt="ภาษาไทย" class="flag" />
+            <span>ภาษาไทย</span>
+          </button>
+          <button class="lang-option" data-lang="TW" data-flag="./img/flag/taiwan.png">
+            <img src="./img/flag/taiwan.png" alt="台灣" class="flag" />
+            <span>繁體中文</span>
+          </button>
+          <button class="lang-option" data-lang="CN" data-flag="./img/flag/china.png">
+            <img src="./img/flag/china.png" alt="中文" class="flag" />
+            <span>中文</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#menuSection">メニュー</a></li>
+      <li><a href="#drinkSection">ドリンク</a></li>
+      <li><a href="#attentionSection">注意事項</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="menuSection">
+      <div class="button-group">
+        <div class="btn-wrapper">
+          <div id="btnWagyu" class="menu-btn">和牛コース</div>
+        </div>
+        <div class="btn-wrapper">
+          <div id="btnPremium" class="menu-btn">プレミアムコース</div>
+        </div>
+        <div class="btn-wrapper">
+          <div id="btnStandard" class="menu-btn">スタンダードコース</div>
+        </div>
+      </div>
+
+      <div class="card-container">
+
+        <!-- WAGYU -->
+        <div class="menuCard" data-flag="wagyu">
+          <div class="image"><img src="./img/kaisen.png" alt="海鮮"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">海鮮</div>
+        </div>
+
+        <div class="menuCard" data-flag="wagyu">
+          <div class="image"><img src="./img/wagyu kakushu.png" alt="和牛各種"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">和牛各種</div>
+        </div>
+
+        <div class="menuCard" data-flag="wagyu">
+          <div class="image"><img src="./img/thigh tongue.png" alt="厚切りタン"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">厚切りタン</div>
+        </div>
+
+        <div class="menuCard" data-flag="wagyu">
+          <div class="image"><img src="./img/parfei.png" alt="パフェ"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">パフェ</div>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="menuCard" data-flag="premium">
+          <div class="image"><img src="./img/4mori.png" alt="4種盛り合わせ"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">ステーキ</div>
+        </div>
+
+        <div class="menuCard" data-flag="premium">
+          <div class="image"><img src="./img/tongue.png" alt="牛タン"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">牛タン</div>
+        </div>
+
+        <div class="menuCard" data-flag="premium">
+          <div class="image"><img src="./img/chisa.png" alt="チシャ"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">巻き野菜</div>
+        </div>
+
+        <div class="menuCard" data-flag="standard">
+          <div class="image"><img src="./img/fried mono.png" alt="揚げ物"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">揚げ物</div>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="menuCard" data-flag="standard">
+          <div class="image"><img src="./img/teiban.png" alt="定番肉"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">定番3種</div>
+        </div>
+
+        <div class="menuCard" data-flag="standard">
+          <div class="image"><img src="./img/buta.png" alt="豚鶏"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">豚鶏肉</div>
+        </div>
+
+        <div class="menuCard" data-flag="standard">
+          <div class="image"><img src="./img/namul.png" alt="ナムル盛り合わせ"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">ナムル盛り合わせ</div>
+        </div>
+
+        <div class="menuCard" data-flag="standard">
+          <div class="image"><img src="./img/horumon.png" alt="ホルモン"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">ホルモン</div>
+        </div>
+
+        <div class="menuCard" data-flag="standard">
+          <div class="image"><img src="./img/cold noodle.png" alt="冷麵"></div>
+          <div class="menuDivider"></div>
+          <div class="menuName">冷麵</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="drinkSection">
+      <div class="note">※ワンドリンク制になります。</div>
+      <div class="drink-container">
+        <div class="main-button-group">
+          <div id="drinkTanpinBtn" class="main-btn">単品</div>
+          <div id="drinkNomihodaiBtn" class="main-btn">飲み放題</div>
+        </div>
+
+        <!-- 単品エリア -->
+        <div id="drinkTanpinArea" class="tanpin-area drink-hidden">
+          <div class="tanpin-images">
+            <img src="./img/pamphlet/drinkmenu1.png" alt="ドリンクメニュー1">
+            <img src="./img/pamphlet/drinkmenu2.png" alt="ドリンクメニュー2">
+          </div>
+        </div>
+
+        <!-- 飲み放題エリア -->
+        <div id="drinkNomihodaiArea" class="nomihodai-area drink-hidden">
+          <div class="button-group">
+            <div class="button-line">
+              <div class="btn-wrapper"><button id="drinkSoft" class="menu-btn">ソフトドリンク飲み放題</button></div>
+              <div class="btn-wrapper"><button id="drinkAlcohol" class="menu-btn">アルコール飲み放題</button></div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="drinkCard" data-flag="soft">
+              <div class="image"><img src="./img/softDrinkMachine1.jpg" alt="アイスドリンク"></div>
+              <div class="drinkDivider"></div>
+              <div class="drinkName">アイスドリンク</div>
+            </div>
+
+            <div class="drinkCard" data-flag="soft">
+              <div class="image"><img src="./img/softDrinkMachine2.jpg" alt="ホットドリンク"></div>
+              <div class="drinkDivider"></div>
+              <div class="drinkName">アイスドリンク</div>
+            </div>
+
+            <div class="drinkCard" data-flag="soft">
+              <div class="image"><img src="./img/softDrinkMachine3.jpg" alt="ホットドリンク"></div>
+              <div class="drinkDivider"></div>
+              <div class="drinkName">ホットドリンク</div>
+            </div>
+
+            <div class="drinkCard" data-flag="alcohol">
+              <div class="image"><img src="./img/beer.jpg" alt="ビール"></div>
+              <div class="drinkDivider"></div>
+              <div class="drinkName">ビール</div>
+            </div>
+
+            <div class="drinkCard" data-flag="alcohol">
+              <div class="image"><img src="./img/highball.jpg" alt="ハイボール"></div>
+              <div class="drinkDivider"></div>
+              <div class="drinkName">ハイボール</div>
+            </div>
+
+            <div class="drinkCard" data-flag="alcohol">
+              <div class="image"><img src="./img/cocktail.jpg" alt="カクテル"></div>
+              <div class="drinkDivider"></div>
+              <div class="drinkName">カクテル</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="attentionSection">
+      <div class="attention-container">
+        <h2 class="attentionTitle">ご利用前にご確認ください</h2>
+
+        <div class="attention-box">食べ飲み残しをした場合は追加料金が発生になります。</div>
+        <div class="attention-box">お席の時間を過ぎた場合は、追加料金をいただきます。</div>
+        <div class="attention-box">飲み放題のお客様は、一度にお一人様一杯までです。</div>
+        <div class="attention-box">９０分のコースは、オーダー時間６５分となります。１２０分のコースは、オーダー時間９０分となります。</div>
+
+        <div class="agree-area">
+          <input type="checkbox" id="attentionCheckbox" />
+          <label for="attentionCheckbox">すべて同意します。</label>
+        </div>
+
+        <button id="attentionStartBtn" class="pressable-btn" role="button" disabled>
+          <span class="text">スタート</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./js/menu_new.js"></script>
+  <script src="./js/drink_menu.js"></script>
+  <script src="./js/attention.js"></script>
+
+  <script type="module" src="./js/language_switcher.js"></script>
+  <script type="module" src="./js/language_droplist_function.js"></script>
+  <script src="./js/language_droplist.js"></script>
+  <script src="./js/popup_Image.js"></script>
+</body>
+
+</html>

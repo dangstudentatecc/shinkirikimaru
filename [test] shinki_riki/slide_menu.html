@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDE MENU見込み</title>
+    <link rel="stylesheet" href="./css/slide_menu.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./js/slide_menu.js"></script>
+</head>
+
+<body>
+    <div>
+        <p class="subtitle">メニュー見込み</p>
+        <h1 class="main-title">炭焼き肉</h1>
+    </div>
+
+    <div class="slider-container" id="sliderContainer">
+        <div class="slider-track" id="sliderTrack">
+            <div class="card" data-title="和牛各種" data-desc="厳選和牛：和牛カルビ、和牛ロース、和牛モモロース、和牛オススメ">
+                <img src="./img/wagyu kakushu.png" alt="Card 1">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="厚切りタン" data-desc="厚ければ厚いほどおいしい牛タン">
+                <img src="./img/thigh tongue.png" alt="Card 2">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="海鮮" data-desc="海老、イカ、たこ、ホタテ">
+                <img src="./img/kaisen.png" alt="Card 3">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="パフェ" data-desc="フルーツとホイップがたっぷりのアイスパフェ">
+                <img src="./img/parfei.png" alt="Card 4">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="名物4種盛り合わせ" data-desc="ボリューム満点！4種のステーキが味わえる名物プレートです">
+                <img src="./img/4mori.png" alt="Card 5">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="牛タン" data-desc="さっぱり塩味の薄切り牛タンが絶品">
+                <img src="./img/tongue.png" alt="Card 6">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="巻き野菜" data-desc="自家製野菜">
+                <img src="./img/chisa.png" alt="Card 7">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="定番3種盛り合わせ" data-desc="甘みと旨みのバランスが絶妙な、人気の3種盛り合わせ">
+                <img src="./img/teiban.png" alt="Card 8">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="ホルモン盛り合わせ" data-desc="新鮮さと旨みが自慢のホルモン3種盛り">
+                <img src="./img/horumon.png" alt="Card 9">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="国産豚肉" data-desc="柔らかく旨みのある国産豚肉を使用しています">
+                <img src="./img/buta.png" alt="Card 10">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="韓国ナムル" data-desc="野菜の旨みとごま油の風味が楽しめる韓国ナムル">
+                <img src="./img/namul.png" alt="Card 11">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="冷麵" data-desc="つるつる食感がクセになる、本格冷麺">
+                <img src="./img/cold noodle.png" alt="Card 12">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+            <div class="card" data-title="揚げ物" data-desc="サクサク食感が楽しめる人気の揚げ物盛り合わせです">
+                <img src="./img/fried mono.png" alt="Card 13">
+                <div class="hover-overlay"><span>詳しく情報</span></div>
+            </div>
+        </div>
+    </div>
+
+    <button class="close-btn" id="closeBtn">
+        <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
+    </button>
+
+    <div class="card-info" id="cardInfo">
+        <h2 id="cardTitle"></h2>
+        <p id="cardDesc"></p>
+    </div>
+
+    <button class="pressable-btn" role="button">
+        <span class="text">スタート</span>
+    </button>
+</body>
+
+</html>

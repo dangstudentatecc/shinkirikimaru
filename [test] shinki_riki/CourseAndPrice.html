@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規オンラインWEBサイト</title>
+    <link rel="stylesheet" href="./css/CourseAndPrice.css">
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <h1>選べる食べ放題コース</h1>
+
+        <div class="courses">
+            <div class="course" data-course="心斎橋コース">
+                <h3>心斎橋コース</h3>
+                <p></p>
+            </div>
+            <div class="course" data-course="プレミアムコース">
+                <h3>プレミアムコース</h3>
+                <p></p>
+            </div>
+            <div class="course" data-course="心斎橋コース">
+                <h3>スタンダードコース</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <h2>選べる２つの時間！</h2>
+
+        <table id="priceTable">
+            <thead>
+                <tr>
+                    <th>コース名</th>
+                    <th data-time="90">90分</th>
+                    <th data-time="120">120分</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>心斎橋コース</td>
+                    <td>4,980円</td>
+                    <td>5,280円</td>
+                </tr>
+                <tr>
+                    <td>プレミアムコース</td>
+                    <td>3,780円</td>
+                    <td>4,080円</td>
+                </tr>
+                <tr>
+                    <td>スタンダードコース</td>
+                    <td>4,980円</td>
+                    <td>5,280円</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="drink-section">
+            <h2>飲み放題コース</h2>
+            <table id="drinkTable">
+                <thead>
+                    <tr>
+                        <th>種類</th>
+                        <th data-time="90">90分</th>
+                        <th data-time="120">120分</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-drink="アルコール">
+                        <td>飲み放題（アルコール）</td>
+                        <td>1,300円</td>
+                        <td>1,400円</td>
+                    </tr>
+                    <tr data-drink="ソフトドリンク">
+                        <td>ソフトドリンク飲み放題</td>
+                        <td>530円</td>
+                        <td>580円</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer></footer>
+
+    <p class="note">※ 食べ放題はワンドリンク制です。5歳以下は対象外となります。</p>
+    <script src="./js/CourseAndPrice.js"></script>
+
+</body>
+
+</html>

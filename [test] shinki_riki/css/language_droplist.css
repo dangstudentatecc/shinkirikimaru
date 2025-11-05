@@ -1,0 +1,197 @@
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    background: #d90404;
+    color: #222;
+
+    background-image: url("../img/charcoal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.2);/* hoặc rgba(0, 0, 0, 0.3) nếu muốn tối */
+    backdrop-filter: blur(8px);/* 👈 hiệu ứng làm mờ phía sau */
+    z-index: -1;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #2f2d2d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+    cursor: pointer;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* ---------- LANGUAGE DROPLIST ---------- */
+.lang-selector {
+    position: relative;
+}
+
+.current-lang {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 50px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.current-lang:hover {
+    transform: scale(1.08);
+}
+
+.flag-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.lang-menu {
+    position: absolute;
+    top: 54px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    z-index: 20;
+    min-width: 180px;
+    animation: fadeIn 0.25s ease;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s ease;
+}
+
+.lang-option:hover {
+    background: #f3f4f6;
+}
+
+.flag {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lang-hidden {
+    display: none;
+}
+
+/* ---------- NAVIGATION ---------- */
+.navbar {
+    position: fixed;
+    top: 72px;
+    /* nằm ngay dưới header */
+    width: 100%;
+    background: #fafafa;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 90;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+    gap: 60px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #ff6b35;
+    transition: width 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: #ff6b35;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+/* ---------- MAIN ---------- */
+main {
+    text-align: center;
+    padding-top: 150px;
+}
+
+section {
+    scroll-margin-top: 120px;
+    /* đẩy nội dung xuống một chút khi cuộn */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

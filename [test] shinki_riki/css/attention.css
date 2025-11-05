@@ -1,0 +1,122 @@
+#attentionSection {
+    font-family: sans-serif;
+    /* background-color: #f8f8f8; */
+    text-align: center;
+    padding: 40px;
+}
+
+.attention-box {
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 500px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.attention-box p {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.attention-box.checked {
+    background-color: #e0f8e0;
+    border-color: #4caf50;
+}
+
+.ok-icon {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    display: none;
+}
+
+.box.checked .ok-icon {
+    display: block;
+}
+
+.check-icon {
+    width: 20px;
+    height: 20px;
+    color: #4caf50;
+    /* hoặc bất kỳ màu nào bạn muốn */
+}
+
+/* checkbox　*/
+
+.attention-box {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 480px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.attention-box.checked {
+    background-color: #e8f6e8;
+    border-color: #4caf50;
+}
+
+/* Checkbox tổng */
+.agree-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #37353E;
+}
+
+.agree-area input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #028931;
+    cursor: pointer;
+}
+
+.agree-area label {
+    cursor: pointer;
+}
+
+@keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+/* ラストボータン　*/
+.pressable-btn {
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid #00531f;
+    color: #00531f;
+    background: #f4f7f8;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.pressable-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pressable-btn.active,
+.pressable-btn:hover:not(:disabled) {
+    background: #028931;
+    color: white;
+}
